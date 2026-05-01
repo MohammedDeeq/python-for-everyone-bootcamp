@@ -1,5 +1,6 @@
 def main():
-    notes = load_notes("notes.txt")
+    file_path = "notes.txt"
+    notes = load_notes(file_path)
     while True:
         print("1) Add note  2) List  3) Quit ")
         user_choose = input("Pick: ")
@@ -11,7 +12,7 @@ def main():
             for note in notes:
                 print(note)
         elif user_choose == "3":
-            save_notes("notes.txt",notes)
+            save_notes(file_path,notes)
             print("Bye!")
             break
         else:
