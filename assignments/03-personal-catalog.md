@@ -1,6 +1,6 @@
 # Assignment 3: Personal catalog (Sections 1–6)
 
-**Due:** Wednesday, June 10, 2026 — 12:00 PM (Africa/Mogadishu / EAT)
+**Due:** Thursday, May 7, 2026 — 12:00 PM (Africa/Mogadishu / EAT)
 
 **Goal:** One program, **`catalog.py`**, that uses a **little from every section** (1–6)—same spirit as Assignment 1 (quiz) and Assignment 2 (study log), now including **classes** and **simple OOP**.
 
