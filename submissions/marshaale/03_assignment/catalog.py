@@ -41,9 +41,24 @@ def main():
     file_path = "catalog.txt"
     game_catalog = Catalog()
     load_catalog(file_path, game_catalog)
-    game_catalog.list_all()
-    game_catalog.add(Game("The Legend of Zelda: Breath of the Wild", "2017", "nintendo"))
-    save_catalog(file_path, game_catalog)
+
+    while True:
+        print("1) Add  2) List  3) Save  4) Quit")
+        user_pick = input("Pick: ")
+
+        if user_pick == "1":
+            pass
+        elif user_pick == "2":
+            game_catalog.list_all()
+        elif user_pick == "3":
+            save_catalog(file_path,game_catalog)
+            print("Saved.")
+        elif user_pick == "4":
+            save_catalog(file_path,game_catalog)
+            print("Saved. Bye!")
+            break
+        else:
+            print("invalid number picked")
 
 
 if __name__ == "__main__":
