@@ -22,13 +22,26 @@ class Catalog:
 
 
 def load_catalog(path, catalog):
-    pass
+    try:
+        with open(path,'r',encoding='utf-8') as f:
+            lines = f.readlines()
+            for line in lines:
+                name, year, platform = line.strip().split('|')
+                game = Game(name, year, platform)
+                catalog.add(game)
+    except FileNotFoundError:
+        print(f"File {path} does not exists")
 
 def save_catalog(path, catalog):
     pass
 
 def main():
-    pass
+    file_path = "catalog.txt"
+    game_catalog = Catalog()
+    load_catalog(file_path, game_catalog)
+    game_catalog.list_all()
+
+
 
 
 if __name__ == "__main__":
