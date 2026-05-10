@@ -1,4 +1,4 @@
-# Name: Muhiadin Hassan
+# by MUHIYADIN2025
 # Description: A simple catalog program to add, list, save, and load items (movies/books/games)
 
 from dataclasses import dataclass
