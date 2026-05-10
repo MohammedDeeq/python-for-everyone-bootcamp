@@ -1,7 +1,6 @@
 # study_log.py
 # Name: MUHIYADIN SAID HASSAN
 # Description: A simple study log program that lets users add, view, and save notes to a file.
-
 def load_notes(path):
     try:
         with open(path, "r", encoding="utf-8") as file:
